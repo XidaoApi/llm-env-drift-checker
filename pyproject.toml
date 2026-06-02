@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "llm-env-drift-checker"
+version = "0.1.0"
+description = "Detect environment drift in OpenAI-compatible LLM deployments before staging and production diverge"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "XidaoApi" }]
+keywords = ["llm", "openai-compatible", "env", "deployment", "config", "python"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9.0",
+]
+
+[project.scripts]
+llm-env-drift-checker = "llm_env_drift_checker.cli:main"
+
+[project.urls]
+Homepage = "https://xidaoapi.com"
+Repository = "https://github.com/XidaoApi/llm-env-drift-checker"
+Issues = "https://github.com/XidaoApi/llm-env-drift-checker/issues"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
