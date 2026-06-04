@@ -1,5 +1,10 @@
 # LLM Env Drift Checker
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/XidaoApi/llm-env-drift-checker)](https://github.com/XidaoApi/llm-env-drift-checker/releases)
+[![Stars](https://img.shields.io/github/stars/XidaoApi/llm-env-drift-checker?style=social)](https://github.com/XidaoApi/llm-env-drift-checker/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/XidaoApi/llm-env-drift-checker)](https://github.com/XidaoApi/llm-env-drift-checker/commits/main)
+
 Detect rollout drift between `.env` files used by OpenAI-compatible LLM apps before staging and production silently diverge.
 
 `llm-env-drift-checker` compares two environment files and highlights the differences that usually matter during 2026 model and provider rollouts:
@@ -64,6 +69,7 @@ WARNING timeout-mismatch staging uses 45 but production uses 20.
 
 ```bash
 pytest -q
+python -m build
 ```
 
 ## License

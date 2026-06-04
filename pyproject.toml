@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "llm-env-drift-checker"
-version = "0.1.0"
+version = "0.1.1"
 description = "Detect environment drift in OpenAI-compatible LLM deployments before staging and production diverge"
 readme = "README.md"
 license = "MIT"
